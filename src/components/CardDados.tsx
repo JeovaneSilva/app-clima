@@ -5,12 +5,11 @@ interface CardProps{
     icon:ReactElement
 }
 
-
 export default function Card({icon,content}:CardProps){
     return (
-        <div className="w-[120px] h-[50px] border-2 border-blue-500 rounded-[8px] flex justify-center items-center mb-6">
-            <p>{icon}</p>
-            <p>{content}</p>
+        <div className="w-[120px] h-[50px] flex justify-center items-center gap-2">
+            <p className="text-xl ">{icon}</p>
+            <p className="text-xl">{content}</p>
         </div>
     )
 }
