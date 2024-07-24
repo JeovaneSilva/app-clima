@@ -74,7 +74,7 @@ export default function Home() {
                 <img className="w-[100px] mt-5" src={srcIcon} alt="" />
                 <p className="text-xl font-bold mt-[-15px] text-">{descricao}</p>
               </div>
-              <div className="w-[80vw] h-[200px] grid grid-cols-2 place-items-center p-5 bg-white bg-opacity-60 mt-12 rounded-[18px]">
+              <div className="w-[80vw] h-[200px] grid grid-cols-2 place-items-center p-5 bg-white mt-12 rounded-[18px]">
                   <Card icon={<FaTemperatureArrowUp />} content={tempMax} />
                   <Card icon={<FaTemperatureArrowDown />} content={tempMin} />
                   <Card icon={<FaWind />} content={velocidade} />
