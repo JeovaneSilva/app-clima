@@ -1,4 +1,9 @@
 import type { Metadata } from "next";
+import { Poppins } from "next/font/google";
+const poppins = Poppins({
+  weight: "300",
+  subsets: ["latin"],
+});
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -13,7 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br">
-      <body className="bg-blue-300">{children}</body>
+      <body className="bg-blue-400">{children}</body>
     </html>
   );
 }
