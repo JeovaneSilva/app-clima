@@ -5,7 +5,7 @@
 Projeto de um site que permite buscar informações sobre clima, umidade, temperatura e outros fatores de qualquer cidade.
 
 -  [x]  Projeto concluído.
-* Disponível em [filmoteca](https://openweathermap.org/api).
+* Disponível em [App de clima](https://app-clima-web.vercel.app/).
 * Hospedado na Vercel.
 * API Utilizada: [Weather API](https://openweathermap.org/api).
 * Condições climáticas da cidade buscada no momento atual.
