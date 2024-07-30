@@ -6,7 +6,6 @@ export const getWeather = async (city: string) => {
 
   const res = await fetch(apiWeatherUrl);
   const data = await res.json();
-  console.log(data);
 
   return data;
 };

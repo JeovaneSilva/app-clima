@@ -52,11 +52,20 @@ export default function Home() {
     }
   };
 
-  const searchCity = (e: any) => {
+  const searchCity = () => {
     const cityForm = city.trim();
-    e.preventDefault();
     showWeather(cityForm);
     setRes(true);
+  };
+
+  const searchSub = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    searchCity();
+  };
+
+  const searchClick = (e: React.MouseEvent<HTMLButtonElement>) => {
+    e.preventDefault();
+    searchCity();
   };
 
   const date = new Date();
@@ -79,7 +88,7 @@ export default function Home() {
     <main className="w-full h-full flex flex-col justify-center items-center">
       <header className="w-full flex flex-col items-center justify-center">
         <form
-          onSubmit={searchCity}
+          onSubmit={searchSub}
           className="flex flex-col justify-center items-center"
         >
           <h1 className="text-4xl mt-[1rem]">Clima</h1>
@@ -94,7 +103,7 @@ export default function Home() {
             />
             <button
               className=" text-2xl p-2 rounded-[12px]"
-              onClick={searchCity}
+              onClick={searchClick}
             >
               <FaMagnifyingGlass />
             </button>
